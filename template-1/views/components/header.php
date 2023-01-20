@@ -9,15 +9,15 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="./index.php"
-                            class="<?= $_SERVER['REQUEST_URI'] ?> block px-3 py-2 rounded-md text-base font-medium"
+                        <a href="/"
+                            class="<?= urlIs('/') ? "bg-gray-700 text-white" : "" ?> text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                             aria-current="page">Home</a>
 
-                        <a href="./about.php"
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                        <a href="./about"
+                            class="<?= urlIs('/about') ? "bg-gray-700 text-white" : "" ?> text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
 
-                        <a href="./contact.php"
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        <a href="./contact"
+                            class="<?= urlIs('/contact') ? "bg-gray-700 text-white" : "" ?> text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
 
                         <a href="#"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
@@ -29,7 +29,7 @@
             </div>
             <div class="hidden md:block">
                 <div class="ml-4 flex items-center md:ml-6">
-                    <button type="button"
+                    <button type="button" `
                         class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                         <span class="sr-only">View notifications</span>
                         <!-- Heroicon name: outline/bell -->
