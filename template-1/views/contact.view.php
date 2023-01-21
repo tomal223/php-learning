@@ -15,6 +15,6 @@
         <!-- /End replace -->
     </div>
 </main>
-
+ 
 
 <?php include "components/footer.php" ?>
