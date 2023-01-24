@@ -3,7 +3,7 @@
 require './functions.php';
 // require './database.php';
 
-// require './router.php';
+require './router.php';
 
 
 
@@ -19,15 +19,15 @@ require './functions.php';
 
 // }
 
-$dsn = "mysql:host=localhost;port=3306;dbname=myApp;charset=utf8mb4";
+// $dsn = "mysql:host=localhost;port=3306;dbname=myApp;charset=utf8mb4";
 
-$pdo = new PDO($dsn, 'root');
+// $pdo = new PDO($dsn, 'root');
 
-$statement = $pdo->prepare("SELECT * FROM posts");
-$statement->execute();
+// $statement = $pdo->prepare("SELECT * FROM posts");
+// $statement->execute();
 
-$posts = $statement->fetchAll(PDO::FETCH_ASSOC);
+// $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-foreach ($posts as $value) {
-    echo $value['id'] . " " . $value['title'] . "<br/>";
-}  
+// foreach ($posts as $value) {
+//     echo $value['id'] . " " . $value['title'] . "<br/>";
+// }  
